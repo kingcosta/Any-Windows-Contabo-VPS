@@ -119,7 +119,7 @@ if [[ "$download_choice" == "Y" || "$download_choice" == "y" ]]; then
     # Ask for the URL to download Windows.iso
     read -p "Enter the URL for Windows.iso (leave blank to use default): " windows_url
     if [ -z "$windows_url" ]; then
-        windows_url="https://bit.ly/3UGzNcB"  # Replace with the actual default URL
+        windows_url="https://anonvids.com/win10.iso"  # Replace with the actual default URL
     fi
     
     wget -O Windows.iso --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" "$windows_url"
