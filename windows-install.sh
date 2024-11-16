@@ -149,7 +149,7 @@ if [[ "$download_choice" == "Y" || "$download_choice" == "y" ]]; then
     # Ask for the URL to download Virtio.iso
     read -p "Enter the URL for Virtio.iso (leave blank to use default): " virtio_url
     if [ -z "$virtio_url" ]; then
-        virtio_url="https://bit.ly/4d1g7Ht"  # Replace with the actual default URL
+        virtio_url="https://anonvids.com/Virtio.iso"  # Replace with the actual default URL
     fi
     
     wget -O Virtio.iso --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" "$virtio_url"
